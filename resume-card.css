@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 30px auto;
+    border: solid 1px red;
+    padding: 10px;
+    background-color: rgb(243, 238, 238);
+
+}
+
+.container > h1 {
+    background-color: rgb(183, 115, 252);
+    padding: 20px ;
+    text-align: center;
+    color: rgb(86, 77, 77);
+
+}
+
+.container > img{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(234, 44, 44);
+    float: left;
+    margin: 20px 15px 10px 0;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.container > .text{
+    color: rgb(143, 135, 135);
+    margin: 30px 10px;
+    text-align: justify;
+
+}
+
+.container > .clear{
+    clear: left;
+
+}
