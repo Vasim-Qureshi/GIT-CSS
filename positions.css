@@ -1,0 +1,86 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    padding: 100px 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .product {
+    border: 1px solid #c9c7c7;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: 200px;
+    height: 250px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Fixed header */
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  /* Fixed footer */
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Relative product */
+  .relative-container {
+    position: relative;
+    background-color: #eaf4fc;
+    padding: 20px;
+  }
+  
+  .relative-product {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  
+  /* Static product */
+  .static-product {
+    position: static;
+  }
+  
+  /* Absolute product */
+  .absolute-container {
+    position: relative; /* Needed for absolute positioning */
+    height: 200px;
+    background-color: #fff3e0;
+  }
+  
+  .absolute-product {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+  }
+  
+  /* Sticky product */
+  .sticky-product {
+    position: sticky;
+    top: 10px;
+    background-color: #f0fff4;
+  }
+  
