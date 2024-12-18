@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg rounded-lg p-4 w-full max-w-md">
+    <ul class="flex justify-between items-center">
+      <li class="relative group">
+        <button class="flex items-center gap-2 text-gray-700 hover:text-blue-600 focus:outline-none">
+          Menu 1
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <!-- Dropdown Menu -->
+        <ul class="absolute left-0 mt-2 w-40 bg-white rounded-md shadow-lg invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-300 opacity-0">
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Option 1</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Option 2</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Option 3</a></li>
+        </ul>
+      </li>
+      <li class="relative group">
+        <button class="flex items-center gap-2 text-gray-700 hover:text-blue-600 focus:outline-none">
+          Menu 2
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <!-- Dropdown Menu -->
+        <ul class="absolute left-0 mt-2 w-40 bg-white rounded-md shadow-lg invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-300 opacity-0">
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Option A</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Option B</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Option C</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>

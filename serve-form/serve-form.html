@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Review Form</title>
+  <link rel="stylesheet" href="serve-form.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Customer Review</h1>
+      <div class="logo">
+        <span>L</span>
+        <p>Larana, Inc.</p>
+      </div>
+    </header>
+
+    <!-- Personal Information -->
+    <form>
+      <div class="form-section">
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Phone</label>
+        <input type="text" placeholder="Enter your phone number">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Address</label>
+        <input type="text" placeholder="Enter your address">
+      </div>
+
+      <!-- Questions Section -->
+      <div class="form-section">
+        <div class="question">
+          <p>Do you use skincare products?</p>
+          <div class="grid-group">
+            <label><input type="radio" name="skincare" value="yes"> Yes</label>
+            <label><input type="radio" name="skincare" value="no"> No</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>Is having good skin important to you?</p>
+          <div class="grid-group">
+            <label><input type="radio" name="good_skin" value="yes"> Yes</label>
+            <label><input type="radio" name="good_skin" value="no"> No</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skincare Issues -->
+      <div class="form-section">
+        <p>Which, if any, of the following statements applies to you?</p>
+        <div class="grid-group-3">
+          <label><input type="checkbox"> I have oily skin</label>
+          <label><input type="checkbox"> I have dry & dull skin</label>
+          <label><input type="checkbox"> I have suffered redness and sensitivity</label>
+          <label><input type="checkbox"> I have acne</label>
+          <label><input type="checkbox"> I have wrinkles</label>
+          <label><input type="checkbox"> I have an uneven skin tone</label>
+          <label><input type="checkbox"> I have pigmentation</label>
+          <label><input type="checkbox"> I have brown spots</label>
+          <label><input type="checkbox"> Other</label>
+        </div>
+      </div>
+
+      <!-- Skincare Products -->
+      <div class="form-section">
+        <p>What are your current skincare products?</p>
+        <div class="grid-group-3">
+          <label><input type="checkbox"> Makeup remover</label>
+          <label><input type="checkbox"> Toner</label>
+          <label><input type="checkbox"> Cleansing</label>
+          <label><input type="checkbox"> Lotion</label>
+          <label><input type="checkbox"> Anti-aging cream</label>
+          <label><input type="checkbox"> Cleanser</label>
+          <label><input type="checkbox"> Eye cream</label>
+          <label><input type="checkbox"> Serum</label>
+          <label><input type="checkbox"> Moisturizer</label>
+          <label><input type="checkbox"> Other</label>
+        </div>
+      </div>
+
+      <!-- Spending & Suggestions -->
+      <div class="form-section">
+        <p>How frequently do you purchase skincare products?</p>
+        <div class="grid-group">
+          <label><input type="radio" name="frequency" value="often"> Often</label>
+          <label><input type="radio" name="frequency" value="sometimes"> Sometimes</label>
+          <label><input type="radio" name="frequency" value="rarely"> Rarely</label>
+          <label><input type="radio" name="frequency" value="never"> Never</label>
+        </div>
+
+        <p>How much do you spend per month?</p>
+        <div class="grid-group-3">
+          <label><input type="radio" name="spend" value="less100"> Less than $100</label>
+          <label><input type="radio" name="spend" value="101-250">$101-$250</label>
+          <label><input type="radio" name="spend" value="more250"> More than $250</label>
+        </div>
+
+        <p>Where do you buy skincare products?</p>
+        <div class="grid-group">
+          <label><input type="checkbox"> Official Website</label>
+          <label><input type="checkbox"> Offline Stores</label>
+          <label><input type="checkbox"> Catalogues</label>
+          <label><input type="checkbox"> E-Commerce</label>
+        </div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="form-section">
+        <p>Would you suggest our product to your friends?</p>
+        <div class="grid-group-3">
+          <label><input type="radio" name="suggest" value="yes"> Yes</label>
+          <label><input type="radio" name="suggest" value="no"> No</label>
+          <label><input type="radio" name="suggest" value="maybe"> Maybe</label>
+        </div>
+
+        <p>What did you enjoy best about our product?</p>
+        <textarea rows="3" placeholder="Share your thoughts"></textarea>
+
+        <p>Give us feedback</p>
+        <textarea rows="3" placeholder="Share your suggestions"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-section">
+        <button type="submit">Submit Review</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
