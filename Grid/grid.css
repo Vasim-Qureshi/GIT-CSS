@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  
+  /* Simple Grid Layout */
+  .grid-container {
+    display: grid;
+
+    /* grid-template-columns: 200px 200px; */
+    /* grid-template-rows: 400px 300px 400px; */
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: repeat(2, 2fr); */
+    /* grid-template-rows: repeat(2,1fr); */
+
+    gap: 10px; /* Space between grid items */
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .grid-container .item {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  /* first element .item-1 will equal to 5 column */
+  .grid-container .item-1{
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+    /* other element will be relative to first element */
+    /* first element .item-1 will equal to 2 column */
+  .grid-container .item-6{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* Advanced Grid Layout */
+  .advanced-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar (1 part in main content), Content (3 parts in main content) */
+    grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+    gap: 10px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .advanced-grid .header {
+    grid-column: 1 / -1; /* Span all columns */
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .advanced-grid .sidebar {
+    background-color: #ffc107;
+    color: black;
+    padding: 20px;
+  }
+  
+  .advanced-grid .content {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+  }
+  
+  .advanced-grid .footer {
+    grid-column: 1 / -1; /* Span all columns */
+    background-color: #dc3545;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Single column layout */
+    }
+    
+    .advanced-grid {
+      grid-template-columns: 1fr; /* Single column layout */
+      grid-template-rows: auto auto auto auto; /* Adjust rows */
+    }
+  }
+  

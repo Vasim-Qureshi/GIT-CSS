@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 200px 300px;
+    grid-template-areas: header content footer;
+    grid-auto-columns: ;
+    grid-auto-rows: ;
+    grid-column-gap: ;
+    grid-row-gap: ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+    grid-column: ;
+    grid-row: ;
+    grid-area: ;
+    grid-gap: ;
+    grid-template: ;
+}
