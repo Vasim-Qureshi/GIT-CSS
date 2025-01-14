@@ -77,6 +77,8 @@ body {
   }
   
   .advanced-grid .sidebar {
+    display: grid;
+    justify-content: center;
     background-color: #ffc107;
     color: black;
     padding: 20px;
